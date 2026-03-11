@@ -69,12 +69,10 @@ Linear LM Head
 
 Instead of absolute positional embeddings:
 
-\[
+$$
 \text{Attention Score} =
-\frac{QK^\top}{\sqrt{d}}
--
-m_h \cdot (i - j)
-\]
+\frac{QK^\top}{\sqrt{d}} - m_h \cdot (i - j)
+$$
 
 - Injects relative positional bias directly into attention scores
 - Improves length generalization
